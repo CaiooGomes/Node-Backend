@@ -1,0 +1,53 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5em;
+}
+
+/* Estilo para contêineres principais */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo para links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para textos */
+p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}

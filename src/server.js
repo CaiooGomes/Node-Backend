@@ -4,6 +4,9 @@ import {fileURLToPath} from "url";
 import {dirname} from "path";
 import path from "path";
 import testRouter from "./routes/TestRoute.js"
+import { connectDatabase } from "./config/database.js";
+import { config } from "dotenv";
+config();
 
 //procurando arquivos
 const __filename = fileURLToPath(import.meta.url);
@@ -26,3 +29,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
 })
+
+connectDatabase();

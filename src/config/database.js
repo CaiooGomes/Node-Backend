@@ -12,5 +12,4 @@ export const connectDatabase = () => {
     connection.on("open", () => {
         console.log("Conectado com o mongoDB");
     })
-
 }

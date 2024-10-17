@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const userShema = new mongoose.Schema({
+    role: { type: String, default: "common"},
     name: String,
     idade: String,
     password: Number,
@@ -8,4 +9,4 @@ const userShema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now}
 });
 
-export const User = mongoose.model("user", userShema);
+export const User = mongoose.model("usuario", userShema);

@@ -7,6 +7,7 @@ import testRouter from "./routes/TestRoute.js"
 import productrouter from "./routes/ProductRouter.js";
 import { connectDatabase } from "./config/database.js";
 import userRouter from "./routes/UserRouter.js";
+import comidaRouter from "./routes/ComidaRouter.js";
 import { config } from "dotenv";
 config();
 
@@ -25,6 +26,7 @@ app.use(express.json());
 app.use("/exemplo", testRouter)
 app.use("/products", productrouter)
 app.use("/auth", userRouter);
+app.use("/comidas", comidaRouter)
 
 //servindo pagina html
 app.use(express.static(path.join(__dirname, "public")));
